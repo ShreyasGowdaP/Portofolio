@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About - Shreyas Gowda P</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #1e1e1e;
+                color: #f4f4f4;
+                line-height: 1.6;
+                overflow-x: hidden;
+            }
+            .cont{
+                border: 1px solid white;
+                padding: 20px;
+                margin: 20px;
+            }
+            .background {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background: url('https://source.unsplash.com/featured/?code') no-repeat center center/cover;
+                filter: blur(4px) brightness(0.7);
+            }
+
+            header {
+                background: rgba(0, 0, 0, 0.8);
+                padding: 20px;
+                position: sticky;
+                top: 0;
+                z-index: 10;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            }
+
+            .nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .nav__logo {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #ffd700;
+                text-decoration: none;
+            }
+
+            .nav__menu {
+                display: flex;
+                gap: 20px;
+            }
+
+            .nav__link {
+                color: #f4f4f4;
+                text-decoration: none;
+                font-size: 1rem;
+                transition: color 0.3s ease;
+            }
+
+            .nav__link:hover {
+                color: #ffd700;
+            }
+
+            .about__container {
+                max-width: 1000px;
+                margin: 80px auto 0; /* Adjusted for sticky header */
+                padding: 50px 20px;
+                text-align: center;
+                background: rgba(0, 0, 0, 0.7);
+                border-radius: 15px;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            }
+
+            .about__title {
+                font-size: 2.5rem;
+                color: #ffd700;
+                margin-bottom: 30px;
+            }
+
+            .about__grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .about__tile {
+                padding: 20px;
+                background: #292d3e;
+                border: 1px solid #3c4049;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                cursor: pointer;
+                color: #d4d4d4;
+            }
+
+            .about__tile:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            }
+
+            .tile__title {
+                font-size: 1.5rem;
+                color: #ffd700;
+                margin-bottom: 10px;
+            }
+
+            .tile__details {
+                font-size: 1rem;
+            }
+
+            @media (max-width: 768px) {
+                .about__grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Background -->
+        <div class="background"></div>
+
+        <!-- HEADER -->
+        <header>
+            <nav class="nav">
+                <a href="#" class="nav__logo">Shreyas Gowda P</a>
+                <div class="nav__menu">
+                    <a href="index.html" class="nav__link">Home</a>
+                    <a href="about.html" class="nav__link active">Education</a>
+                    <a href="project.html" class="nav__link">Project</a>
+                    <a href="skills.html" class="nav__link">Skills</a>
+                    <a href="contact.html" class="nav__link">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ABOUT SECTION -->
+        <main class="about__container">
+            <h1 class="about__title">About Me</h1>
+            <div class="about__grid">
+                <!-- Tile 1 -->
+                <div class="about__tile">
+                    <h2 class="tile__title">Basic Information</h2>
+                    <p class="tile__details">Name: Shreyas Gowda P</p>
+                    <p class="tile__details">Date of Birth: October 22, 2004</p>
+                    <p class="tile__details">Gender: Male</p>
+                </div>
+
+                <!-- Tile 2 -->
+                <div class="about__tile">
+                    <h2 class="tile__title">Schooling</h2>
+                    <p class="tile__details">School: VASAVI ENGLISH SCHOOL</p>
+                    <p class="tile__details">Location: Hassan,Karnataka</p>
+                    <p class="tile__details">Percentage: 95.2%</p>
+                    <p class="tile__details">Passing year: 2019-20</p>
+                </div>
+
+                <!-- Tile 3 -->
+                <div class="about__tile">
+                    <h2 class="tile__title">PU College</h2>
+                    <p class="tile__details">College: Hassan Public PU College</p>
+                    <p class="tile__details">Location: Hassan,Karnataka</p>
+                    <p class="tile__details">Percentage: 93.33%</p>
+                    <p class="tile__details">Passing year: 2020-22</p>
+                </div>
+
+                <!-- Tile 4 -->
+                <div class="about__tile">
+                    <h2 class="tile__title">Engineering College</h2>
+                    <p class="tile__details">College: Malnad College of Engineering</p>
+                    <p class="tile__details">Location: Hassan,Karnataka</p>
+                    <p class="tile__details">1<sup>st</sup>SEM = 9.35   ||  5<sup>th</sup>SEM = </p>
+                    <p class="tile__details">2<sup>nd</sup>SEM = 9.25   ||  6<sup>th</sup>SEM = </p>
+                    <p class="tile__details">3<sup>rd</sup>SEM = 9.20   ||  7<sup>th</sup>SEM = </p>
+                    <p class="tile__details">4<sup>th</sup>SEM = 9.00   ||  8<sup>th</sup>SEM = </p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
